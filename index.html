@@ -3,34 +3,67 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Política de Privacidad — Kaa'na MX</title>
+  <title>Política de Privacidad y Eliminación de Datos — Kaa'na MX</title>
   <style>
     body {
       font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-      line-height: 1.6;
+      line-height: 1.65;
       color: #1e293b;
       background-color: #f8fafc;
       margin: 0;
       padding: 0;
     }
     .container {
-      max-width: 800px;
-      margin: 40px auto;
+      max-width: 860px;
+      margin: 36px auto;
       background: #ffffff;
-      padding: 32px 40px;
-      border-radius: 12px;
-      box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+      padding: 36px 44px;
+      border-radius: 14px;
+      box-shadow: 0 4px 12px rgba(15, 23, 42, 0.08);
+      border: 1px solid #e2e8f0;
     }
     h1 { color: #0f172a; font-size: 26px; margin-bottom: 8px; border-bottom: 2px solid #e2e8f0; padding-bottom: 12px; }
-    h2 { color: #1e3a8a; font-size: 18px; margin-top: 28px; margin-bottom: 8px; }
+    h2 { color: #1e3a8a; font-size: 19px; margin-top: 30px; margin-bottom: 10px; }
+    h3 { color: #0f172a; font-size: 16px; margin-top: 18px; margin-bottom: 6px; }
     p, li { font-size: 15px; color: #334155; }
-    ul { padding-left: 20px; }
+    ul { padding-left: 22px; }
+    li { margin-bottom: 8px; }
+    code {
+      background: #f1f5f9;
+      padding: 2px 6px;
+      border-radius: 4px;
+      font-size: 13px;
+      color: #0f172a;
+    }
     .alert-box {
       background-color: #eff6ff;
-      border-left: 4px solid #3b82f6;
-      padding: 14px 18px;
+      border-left: 4px solid #2563eb;
+      padding: 16px 20px;
       margin: 20px 0;
       border-radius: 0 8px 8px 0;
+    }
+    .deletion-box {
+      background-color: #fef2f2;
+      border-left: 4px solid #dc2626;
+      padding: 16px 20px;
+      margin: 20px 0;
+      border-radius: 0 8px 8px 0;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 18px 0;
+      font-size: 14px;
+    }
+    th, td {
+      border: 1px solid #cbd5e1;
+      padding: 10px 12px;
+      text-align: left;
+    }
+    th {
+      background-color: #f1f5f9;
+      color: #0f172a;
+      font-weight: 700;
     }
     .footer {
       margin-top: 40px;
@@ -45,58 +78,129 @@
 <body>
 
 <div class="container">
-  <h1>Política de Privacidad y Aviso Legal</h1>
-  <p><strong>Aplicación:</strong> Kaa'na MX — Plataforma Táctica de Monitoreo y Alerta Temprana</p>
-  <p><strong>Última actualización:</strong> Junio de 2026</p>
+  <h1>Política de Privacidad, Transparencia y Eliminación de Datos</h1>
+  <p><strong>Aplicación:</strong> Kaa'na MX — Plataforma Ciudadana de Monitoreo Hidrometeorológico, Sísmico y Alerta Temprana (<code>com.kaana.mx</code>)</p>
+  <p><strong>Última actualización:</strong> Octubre de 2026 · <strong>Versión:</strong> 1.0.0 (Android SDK 36)</p>
 
   <div class="alert-box">
-    <strong>Aviso Legal y Exención de Responsabilidad Gubernamental:</strong><br>
-    Kaa'na MX es un desarrollo tecnológico independiente de visualización meteorológica, cartografía situacional y apoyo ciudadano ante emergencias. <strong>Kaa'na MX NO representa, NO está afiliada, NO está patrocinada NI actúa en nombre de ninguna entidad gubernamental u organismo estatal</strong> de México ni del extranjero. Los datos provienen exclusivamente de redes científicas públicas y de dominio abierto (USGS, SSN UNAM, EMSC, NOAA, Copernicus CEMS/CAMS y WMO).
+    <strong>Aviso Legal y Deslinde de Afiliación Gubernamental:</strong><br>
+    Kaa'na MX es una plataforma tecnológica de carácter estrictamente <strong>civil, independiente y humanitario</strong>. <strong>Kaa'na MX NO representa, NO forma parte, NO está patrocinada NI actúa como órgano oficial de ninguna institución de gobierno, cuerpo militar o agencia de seguridad pública</strong> de México ni del extranjero. Todos los datos meteorológicos, hidrológicos (156 ríos y presas críticas), sísmicos y satelitales provienen exclusivamente de redes científicas públicas de libre acceso (CONAGUA, SMN, CENAPRED, SSN-UNAM, NOAA/NHC, AviationWeather, USGS, NASA GOES-East, Copernicus CAMS y Open-Meteo).
   </div>
 
-  <h2>1. Compromiso de Privacidad y Seguridad</h2>
+  <h2>1. Compromiso de Privacidad y Cero Espionaje</h2>
   <p>
-    En <strong>Kaa'na MX</strong>, la privacidad de nuestros usuarios y la protección civil son prioritarias. Garantizamos que <strong>NO comercializamos, NO vendemos, NO alquilamos ni compartimos datos personales con terceros para fines publicitarios o lucrativos</strong>.
-  </p>
-
-  <h2>2. Permisos y Datos Recopilados</h2>
-  <p>Para proporcionar funciones vitales de alerta temprana y cartografía de emergencia, la aplicación puede solicitar los siguientes permisos estrictamente necesarios:</p>
-  <ul>
-    <li>
-      <strong>Ubicación Precisa y en Segundo Plano (GPS):</strong> Se utiliza exclusivamente para calcular el tiempo estimado de arribo (ETA) de ondas sísmicas secundarias (Ondas S), alertar sobre la proximidad de desbordamientos de ríos o huracanes en tiempo real, y centrar el mapa en zonas seguras de evacuación. La ubicación no se almacena de forma permanente ni se asocia a la identidad física del usuario.
-    </li>
-    <li>
-      <strong>Cámara y Galería Multimedia:</strong> Se solicita únicamente cuando el usuario decide voluntariamente capturar o adjuntar una fotografía como evidencia en un reporte ciudadano de siniestro o derrumbe.
-    </li>
-    <li>
-      <strong>Bluetooth / Red Mesh Offline:</strong> Se emplea para la comunicación comunitaria de auxilio entre dispositivos cercanos mediante redes P2P cuando colapsa la infraestructura de telecomunicaciones o el servicio de internet.
-    </li>
-    <li>
-      <strong>Notificaciones y Alarma Sonora:</strong> Para emitir señales acústicas y notificaciones prioritarias ante sismos o ciclones de impacto inminente.
-    </li>
-  </ul>
-
-  <h2>3. Cifrado y Seguridad de los Datos</h2>
-  <p>
-    Toda la comunicación entre la aplicación y los servidores de telemetría se realiza a través de conexiones seguras y cifradas mediante protocolos estándar de la industria <strong>HTTPS con cifrado TLS</strong>.
-  </p>
-
-  <h2>4. Eliminación de Datos y Derechos del Usuario</h2>
-  <p>
-    En estricto cumplimiento con las políticas de Google Play Console, el usuario dispone de mecanismos directos para solicitar la supresión de su información:
+    En <strong>Kaa'na MX</strong>, la privacidad de nuestros usuarios y la protección civil son prioritarias:
   </p>
   <ul>
-    <li><strong>Desde la Aplicación:</strong> En el menú <em>Manual del Operador > Pestaña 'Privacidad y Aviso Legal' > Botón 'Gestionar / Borrar Datos'</em>, el usuario puede eliminar de inmediato la memoria caché local, identificadores de dispositivo y registros temporales.</li>
-    <li><strong>Solicitud Directa:</strong> Puede solicitar la eliminación definitiva de cualquier reporte enviado contactando al soporte técnico a través del correo oficial del proyecto.</li>
+    <li><strong>Cero Venta o Uso Comercial:</strong> NO comercializamos, NO vendemos, NO alquilamos ni compartimos datos personales o coordenadas con terceros ni brokers publicitarios.</li>
+    <li><strong>Cero Rastreo en Segundo Plano:</strong> La aplicación <strong>NO solicita ni utiliza ubicación en segundo plano</strong> (<code>ACCESS_BACKGROUND_LOCATION</code> no está presente en la aplicación).</li>
+    <li><strong>Cero Escucha o Grabación:</strong> La aplicación no accede al micrófono ni graba audio del usuario.</li>
   </ul>
 
-  <h2>5. Contacto</h2>
+  <h2>2. Permisos Solicitados y Tratamiento de Datos (Divulgación Destacada)</h2>
+  <p>Antes de solicitar cualquier permiso del sistema operativo, Kaa'na MX presenta una <strong>Divulgación Destacada (Prominent Disclosure)</strong> en pantalla e incluye un <em>Modo Solo Lectura</em> para quienes deseen consultar mapas sin otorgar permisos:</p>
+
+  <h3>A. Ubicación Geográfica Exclusivamente en Primer Plano (<code>ACCESS_FINE_LOCATION</code>, <code>ACCESS_COARSE_LOCATION</code>)</h3>
+  <ul>
+    <li><strong>Finalidad:</strong> Centrar el mapa táctico en la posición del usuario mientras la app está abierta, evaluar geocercas vectoriales de peligro (ríos, presas, ciclones y ondas sísmicas P/S), mostrar refugios temporales cercanos y permitir que el usuario configure voluntariamente su radio de vigilancia para notificaciones Push.</li>
+    <li><strong>Modalidad:</strong> Sólo se accede a la ubicación con la aplicación en uso activo en pantalla (Primer Plano) o mediante selección manual de Entidad Federativa sin usar GPS.</li>
+  </ul>
+
+  <h3>B. Sensores Inerciales y Acelerómetro Sísmico (<code>HIGH_SAMPLING_RATE_SENSORS</code>)</h3>
+  <ul>
+    <li><strong>Finalidad:</strong> Detectar ondas sísmicas primarias (ondas P) mediante el algoritmo científico <strong>STA/LTA</strong> (<em>Short-Term Average / Long-Term Average</em>) cuando el teléfono se encuentra en reposo, funcionando como sismógrafo ciudadano con validación por <strong>quórum comunitario</strong> (mínimo 3 dispositivos cercanos independientes para prevenir falsas alarmas).</li>
+    <li><strong>Privacidad por Diseño:</strong> Las lecturas crudas del acelerómetro se procesan <strong>100% en la memoria local volátil del dispositivo</strong> y jamás se almacenan como historial de movimiento.</li>
+  </ul>
+
+  <h3>C. Red Ciudadana Mesh P2P Offline (<code>BLUETOOTH_SCAN</code>, <code>BLUETOOTH_ADVERTISE</code>, <code>BLUETOOTH_CONNECT</code>, <code>NEARBY_WIFI_DEVICES</code>)</h3>
+  <ul>
+    <li><strong>Finalidad:</strong> Retransmitir alertas críticas de emergencia y paquetes de auxilio comunitario entre dispositivos cercanos mediante Bluetooth Low Energy (BLE) y WebRTC cuando colapsan las telecomunicaciones o el suministro eléctrico.</li>
+    <li><strong>Garantía de No-Ubicación (<code>neverForLocation</code>):</strong> Todos los permisos de escaneo cercano incluyen la restricción estricta de Android <code>android:usesPermissionFlags="neverForLocation"</code>. Nunca se utiliza Bluetooth ni Wi-Fi cercano para deducir o triangular su ubicación física.</li>
+  </ul>
+
+  <h3>D. Cámara y Evidencia Ciudadana (<code>CAMERA</code> — Estrictamente Opcional)</h3>
+  <ul>
+    <li><strong>Finalidad:</strong> Permitir al usuario capturar voluntariamente una fotografía de evidencia al reportar un incidente en campo (inundación, deslave, árbol caído) o visualizar puntos de seguridad en Realidad Aumentada (RA). Jamás se activa en segundo plano.</li>
+  </ul>
+
+  <h3>E. Notificaciones Críticas y Servicio de Alarma de Emergencia (<code>POST_NOTIFICATIONS</code>, <code>FOREGROUND_SERVICE_SPECIAL_USE</code>, <code>USE_FULL_SCREEN_INTENT</code>)</h3>
+  <ul>
+    <li><strong>Finalidad:</strong> Emitir alertas de máxima prioridad y activar el servicio nativo de sirena acústica de emergencia (<code>KaanaEmergencyAlarmService</code>) con botón inmediato de apagado (<em>"APAGAR ALARMA"</em>) sobre la pantalla de bloqueo únicamente durante los segundos críticos de un sismo severo o emergencia hidrometeorológica.</li>
+  </ul>
+
+  <h2>3. Resumen de Seguridad de Datos (Google Play Data Safety)</h2>
+  <table>
+    <thead>
+      <tr>
+        <th>Tipo de Dato</th>
+        <th>¿Se recopila?</th>
+        <th>¿Se comparte con terceros?</th>
+        <th>Carácter</th>
+        <th>Finalidad</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Ubicación precisa / aproximada</td>
+        <td>Sí (Primer Plano)</td>
+        <td>No</td>
+        <td>Opcional</td>
+        <td>Alertas por proximidad, geocercas de ríos/presas/sismos y reportes ciudadanos.</td>
+      </tr>
+      <tr>
+        <td>Fotos de reportes ciudadanos</td>
+        <td>Sí</td>
+        <td>No</td>
+        <td>Opcional</td>
+        <td>Evidencia visual voluntaria de incidentes viales o hidrometeorológicos.</td>
+      </tr>
+      <tr>
+        <td>Token de Notificaciones Push (FCM)</td>
+        <td>Sí</td>
+        <td>No</td>
+        <td>Opcional</td>
+        <td>Despacho de alertas tempranas de emergencia sísmica e hidrológica.</td>
+      </tr>
+      <tr>
+        <td>Acelerómetro (STA/LTA)</td>
+        <td>Procesamiento local</td>
+        <td>No</td>
+        <td>Opcional</td>
+        <td>Detección local de ondas sísmicas P y quórum comunitario.</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <h2>4. Cifrado y Seguridad en Tránsito</h2>
   <p>
-    Para dudas, aclaraciones o solicitudes relativas a esta política de privacidad, puede contactarnos a través de los canales de soporte del proyecto Kaa'na MX en GitHub o en la ficha de la aplicación en Google Play Store.
+    Toda la comunicación entre la aplicación y los servidores de Kaa'na MX se transmite exclusivamente mediante conexiones cifradas <strong>HTTPS (TLS 1.3)</strong> y <strong>WebSockets Seguros (WSS)</strong> con tráfico en texto plano bloqueado por configuración nativa (<code>cleartextTrafficPermitted="false"</code>).
+  </p>
+
+  <h2 id="eliminacion-de-datos">5. Eliminación de Cuenta y Datos del Dispositivo (Data Deletion Policy)</h2>
+  <div class="deletion-box">
+    <strong>Control Total e Inmediato del Usuario (Cumplimiento Google Play &amp; Apple App Store):</strong><br>
+    Usted puede eliminar de forma inmediata, autónoma e irreversible todos sus datos locales, identificadores de dispositivo, suscripciones Push, reportes asociados y cuenta de operador sin necesidad de esperar respuesta por correo:
+    <ol>
+      <li><strong>Eliminación Directa en 1 Clic desde la App:</strong> Abra <em>Ajustes de Localización (icono de ubicación en la barra superior) &rarr; botón "Privacidad y Gestión de Datos"</em> (o desde <em>Manual del Operador &rarr; Privacidad</em>) y pulse:
+        <ul>
+          <li><strong>"Limpiar Caché"</strong>: Borra mapas locales, preferencias y almacenamiento en el dispositivo.</li>
+          <li><strong>"Eliminar Datos"</strong>: Invoca el endpoint seguro <code>POST /api/privacy/delete-device-data</code> para purgar tokens Push, registros de proximidad y reportes asociados al dispositivo.</li>
+          <li><strong>"Eliminar Cuenta"</strong>: Invoca <code>DELETE /api/auth/account</code> para eliminar permanentemente su cuenta de operador y credenciales de la base de datos.</li>
+        </ul>
+      </li>
+      <li><strong>Solicitud vía Web / Correo Electrónico:</strong> Si ya desinstaló la aplicación, puede solicitar la supresión total de cualquier dato o cuenta enviando un correo a <strong>soporte@kaana.mx</strong> o <strong>contacto@kaana.mx</strong> indicando su nombre de usuario o identificador; la solicitud se ejecuta en un plazo máximo de 24 horas.</li>
+    </ol>
+  </div>
+
+  <h2>6. Contacto</h2>
+  <p>
+    Para dudas, auditorías de transparencia o solicitudes sobre esta política de privacidad:<br>
+    <strong>Correo Electrónico:</strong> <code>soporte@kaana.mx</code> / <code>contacto@kaana.mx</code><br>
+    <strong>Plataforma Oficial:</strong> <a href="https://kaana.mx">https://kaana.mx</a>
   </p>
 
   <div class="footer">
-    Kaa'na MX · Plataforma de Monitoreo y Resiliencia Ciudadana · México
+    Kaa'na MX · Plataforma Ciudadana de Monitoreo Hidrometeorológico, Sísmico y Resiliencia Comunitaria · México
   </div>
 </div>
 
